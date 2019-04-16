@@ -1,0 +1,122 @@
+{
+    "supplier1":[
+		{"rank": 1, "code": 91131061, "supplier": "日清医療食品", "amount": "¥99703.02"},
+		{"rank": 2, "code": 733029146, "supplier": "ガーラ", "amount": "¥99624.80"},
+		{"rank": 3, "code": 437711996, "supplier": "近江兄弟社", "amount": "¥99549.50"},
+		{"rank": 4, "code": 422714970, "supplier": "田淵電機", "amount": "¥99509.68"},
+		{"rank": 5, "code": 51010005, "supplier": "清水建設", "amount": "¥98822.12"},
+		{"rank": 6, "code": 139068534, "supplier": "石原産業", "amount": "¥98597.55"},
+		{"rank": 7, "code": 942604957, "supplier": "昴", "amount": "¥97201.86"},
+		{"rank": 8, "code": 648946193, "supplier": "リョービ", "amount": "¥95902.35"},
+		{"rank": 9, "code": 217974817, "supplier": "エーエム・ピーエム・ジャパン", "amount": "¥95506.33"},
+		{"rank": 10, "code": 770549027, "supplier": "住商メタレックス", "amount": "¥94443.39"}
+    ],
+    "supplier2":[
+		{"rank": 1, "code": 598706199, "supplier": "トリニティ工業", "amount": "¥94308.61"},
+		{"rank": 2, "code": 565844665, "supplier": "トーセ", "amount": "¥93764.72"},
+		{"rank": 3, "code": 11530545, "supplier": "東祥", "amount": "¥92847.33"},
+		{"rank": 4, "code": 654881321, "supplier": "ユー・エム・シー・ジャパン", "amount": "¥92839.92"},
+		{"rank": 5, "code": 767431796, "supplier": "メルクス", "amount": "¥92327.73"},
+		{"rank": 6, "code": 295864233, "supplier": "富士ゼロックス", "amount": "¥92076.28"},
+		{"rank": 7, "code": 159871069, "supplier": "かんなん丸", "amount": "¥91574.27"},
+		{"rank": 8, "code": 405519612, "supplier": "大木", "amount": "¥91184.26"},
+		{"rank": 9, "code": 459213226, "supplier": "キッセイ薬品工業", "amount": "¥90733.98"},
+		{"rank": 10, "code": 931477658, "supplier": "サザビー", "amount": "¥90473.19"}
+    ],
+    "supplier3":[
+		{"rank": 1, "code": 167252346, "supplier": "ドギーマンハヤシ", "amount": "¥90162.91"},
+		{"rank": 2, "code": 935157061, "supplier": "宇部マテリアルズ", "amount": "¥90000.80"},
+		{"rank": 3, "code": 891663045, "supplier": "マンパワー・ジャパン", "amount": "¥89284.17"},
+		{"rank": 4, "code": 359591228, "supplier": "ダイセキ", "amount": "¥89115.82"},
+		{"rank": 5, "code": 267245607, "supplier": "はるやま商事", "amount": "¥89068.82"},
+		{"rank": 6, "code": 884153047, "supplier": "サンワドー", "amount": "¥87489.25"},
+		{"rank": 7, "code": 206317335, "supplier": "新東工業", "amount": "¥87210.69"},
+		{"rank": 8, "code": 138263432, "supplier": "龍角散", "amount": "¥86661.43"},
+		{"rank": 9, "code": 295942536, "supplier": "レイテックス", "amount": "¥86613.37"},
+		{"rank": 10, "code": 445340509, "supplier": "積水ハウス", "amount": "¥86571.57"}
+    ],
+    "supplier4":[
+		{"rank": 1, "code": 987906576, "supplier": "エンチョー", "amount": "¥86291.28"},
+		{"rank": 2, "code": 268307305, "supplier": "KDDI", "amount": "¥86285.70"},
+		{"rank": 3, "code": 135819558, "supplier": "アンジェス MG", "amount": "¥86103.26"},
+		{"rank": 4, "code": 380195066, "supplier": "日本放送協会", "amount": "¥85987.32"},
+		{"rank": 5, "code": 116001051, "supplier": "あいおい損害保険", "amount": "¥85929.02"},
+		{"rank": 6, "code": 681885132, "supplier": "マックス", "amount": "¥85902.30"},
+		{"rank": 7, "code": 823559257, "supplier": "イトーヨーカ堂", "amount": "¥84935.31"},
+		{"rank": 8, "code": 698214681, "supplier": "日本農産工業", "amount": "¥84649.91"},
+		{"rank": 9, "code": 991711011, "supplier": "ヤンマー", "amount": "¥84604.04"},
+		{"rank": 10, "code": 93864506, "supplier": "アルバイトタイムス", "amount": "¥84174.43"}
+    ],
+    "supplier5":[
+		{"rank": 1, "code": 475950027, "supplier": "オーエムエムジー", "amount": "¥83604.97"},
+		{"rank": 2, "code": 951849393, "supplier": "科研製薬", "amount": "¥83545.10"},
+		{"rank": 3, "code": 934180584, "supplier": "新キャタピラー三菱", "amount": "¥82731.01"},
+		{"rank": 4, "code": 945621605, "supplier": "ソリスト", "amount": "¥82512.33"},
+		{"rank": 5, "code": 7517279, "supplier": "岩崎通信機", "amount": "¥82425.60"},
+		{"rank": 6, "code": 299671337, "supplier": "第一生命保険", "amount": "¥82137.90"},
+		{"rank": 7, "code": 193913359, "supplier": "アントイレプランナー", "amount": "¥81538.90"},
+		{"rank": 8, "code": 952997942, "supplier": "メッセージ", "amount": "¥81519.18"},
+		{"rank": 9, "code": 790819383, "supplier": "明光ネットワークジャパン", "amount": "¥81090.73"},
+		{"rank": 10, "code": 49474427, "supplier": "ケンコーマヨネーズ", "amount": "¥80951.42"}
+    ],
+    "supplier6":[
+		{"rank": 1, "code": 129773121, "supplier": "青山商事", "amount": "¥80900.16"},
+		{"rank": 2, "code": 944909355, "supplier": "タチエス", "amount": "¥80661.64"},
+		{"rank": 3, "code": 109691600, "supplier": "スターフューチャーズ証券", "amount": "¥80139.48"},
+		{"rank": 4, "code": 183156469, "supplier": "大気社", "amount": "¥78966.81"},
+		{"rank": 5, "code": 418347834, "supplier": "亜細亜証券印刷", "amount": "¥78661.03"},
+		{"rank": 6, "code": 458810630, "supplier": "エンプラス", "amount": "¥78536.70"},
+		{"rank": 7, "code": 9216167, "supplier": "安田倉庫", "amount": "¥77682.58"},
+		{"rank": 8, "code": 441170441, "supplier": "松風", "amount": "¥77076.73"},
+		{"rank": 9, "code": 818705234, "supplier": "神戸製鋼所", "amount": "¥76047.81"},
+		{"rank": 10, "code": 351716003, "supplier": "セイカ食品", "amount": "¥75998.55"}
+    ],
+    "supplier7":[
+		{"rank": 1, "code": 183144392, "supplier": "ザインエレクトロニクス", "amount": "¥75757.93"},
+		{"rank": 2, "code": 613786772, "supplier": "ソレキア", "amount": "¥73977.22"},
+		{"rank": 3, "code": 5614389, "supplier": "ナック", "amount": "¥73158.63"},
+		{"rank": 4, "code": 110050330, "supplier": "倉敷紡績", "amount": "¥72967.69"},
+		{"rank": 5, "code": 702228927, "supplier": "日本ペットフード", "amount": "¥72767.75"},
+		{"rank": 6, "code": 794739321, "supplier": "イノテック", "amount": "¥71698.22"},
+		{"rank": 7, "code": 534241370, "supplier": "日鉄鋼管", "amount": "¥71018.61"},
+		{"rank": 8, "code": 696091311, "supplier": "シルバーオックス", "amount": "¥70422.07"},
+		{"rank": 9, "code": 761335195, "supplier": "ニチロ", "amount": "¥69791.56"},
+		{"rank": 10, "code": 124190319, "supplier": "イオン", "amount": "¥69675.79"}
+    ],
+    "supplier8":[
+		{"rank": 1, "code": 128773354, "supplier": "アヲハタ", "amount": "¥69303.26"},
+		{"rank": 2, "code": 69541164, "supplier": "ジャムコ", "amount": "¥68470.27"},
+		{"rank": 3, "code": 517054436, "supplier": "学生援護会", "amount": "¥68405.35"},
+		{"rank": 4, "code": 428254954, "supplier": "ニフコ", "amount": "¥68030.21"},
+		{"rank": 5, "code": 703600393, "supplier": "なが多", "amount": "¥67937.08"},
+		{"rank": 6, "code": 107558617, "supplier": "飯田産業", "amount": "¥67889.47"},
+		{"rank": 7, "code": 487663419, "supplier": "新明和工業", "amount": "¥67469.73"},
+		{"rank": 8, "code": 454351033, "supplier": "コニシ", "amount": "¥66956.35"},
+		{"rank": 9, "code": 189806393, "supplier": "亀屋万年堂", "amount": "¥66637.29"},
+		{"rank": 10, "code": 160946944, "supplier": "富士通サポートアンドサービス", "amount": "¥66486.18"}
+    ],
+    "supplier9":[
+		{"rank": 1, "code": 449329741, "supplier": "シマダヤ", "amount": "¥65320.65"},
+		{"rank": 2, "code": 88354565, "supplier": "鈴茂器工", "amount": "¥65221.07"},
+		{"rank": 3, "code": 563752776, "supplier": "ミネベア", "amount": "¥65073.42"},
+		{"rank": 4, "code": 261862074, "supplier": "タマノイ酢", "amount": "¥65017.09"},
+		{"rank": 5, "code": 105485480, "supplier": "ウインテスト", "amount": "¥63693.82"},
+		{"rank": 6, "code": 347715050, "supplier": "TTG", "amount": "¥63454.60"},
+		{"rank": 7, "code": 125335556, "supplier": "岩谷産業", "amount": "¥63183.90"},
+		{"rank": 8, "code": 992959138, "supplier": "島田理化工業", "amount": "¥63144.75"},
+		{"rank": 9, "code": 105047480, "supplier": "文藝春秋", "amount": "¥62907.44"},
+		{"rank": 10, "code": 848248923, "supplier": "ダイダン", "amount": "¥62629.87"}
+    ],
+    "supplier10":[
+		{"rank": 1, "code": 651330854, "supplier": "住友生命保険", "amount": "¥62578.54"},
+		{"rank": 2, "code": 171716752, "supplier": "赤福", "amount": "¥62340.66"},
+		{"rank": 3, "code": 134192003, "supplier": "アラクス", "amount": "¥61782.89"},
+		{"rank": 4, "code": 135839340, "supplier": "京進", "amount": "¥61133.58"},
+		{"rank": 5, "code": 840265664, "supplier": "洸陽フューチャーズ", "amount": "¥60785.45"},
+		{"rank": 6, "code": 407084864, "supplier": "ソノコム", "amount": "¥60412.81"},
+		{"rank": 7, "code": 561725324, "supplier": "東燃ゼネラル石油", "amount": "¥60146.79"},
+		{"rank": 8, "code": 424432399, "supplier": "三谷産業", "amount": "¥59946.82"},
+		{"rank": 9, "code": 654730960, "supplier": "コーセル", "amount": "¥59811.84"},
+		{"rank": 10, "code": 353929093, "supplier": "丸紅インフォテック", "amount": "¥59107.12"}
+    ]
+}

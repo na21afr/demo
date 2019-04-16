@@ -1,0 +1,92 @@
+{
+    "honsha1a":[
+		{"rank": 1, "code": 91131061, "budget": "ソフトバンク", "amount": "¥499462.49"}
+    ],
+    "honsha1b":[
+		{"rank": 1, "code": 598706199, "budget": "ソフトバンク", "amount": "¥493130.80"}
+    ],
+    "group1":[
+		{"rank": 1, "code": 167252346, "budget": "オリエントコーポレーション", "amount": "¥490983.23"},
+		{"rank": 2, "code": 935157061, "budget": "ワークスアプリケーションズ", "amount": "¥490620.30"},
+		{"rank": 3, "code": 891663045, "budget": "愛光電気", "amount": "¥489900.96"},
+		{"rank": 4, "code": 359591228, "budget": "東映ラボ・テック", "amount": "¥489830.37"},
+		{"rank": 5, "code": 267245607, "budget": "日本パレットプール", "amount": "¥489459.96"},
+		{"rank": 6, "code": 884153047, "budget": "北雄ラッキー", "amount": "¥488829.87"},
+		{"rank": 7, "code": 206317335, "budget": "ファースト住建", "amount": "¥488753.35"},
+		{"rank": 8, "code": 138263432, "budget": "カネ美食品", "amount": "¥488097.16"},
+		{"rank": 9, "code": 138263432, "budget": "日本レストランシステム", "amount": "¥488097.16"},
+		{"rank": 10, "code": 295942536, "budget": "ダイニチ工業", "amount": "¥488032.37"}
+    ],
+    "group2":[
+		{"rank": 1, "code": 167252346, "budget": "オリエントコーポレーション", "amount": "¥490983.23"},
+		{"rank": 2, "code": 935157061, "budget": "ワークスアプリケーションズ", "amount": "¥490620.30"},
+		{"rank": 3, "code": 891663045, "budget": "愛光電気", "amount": "¥489900.96"},
+		{"rank": 4, "code": 359591228, "budget": "東映ラボ・テック", "amount": "¥489830.37"},
+		{"rank": 5, "code": 267245607, "budget": "日本パレットプール", "amount": "¥489459.96"},
+		{"rank": 6, "code": 884153047, "budget": "北雄ラッキー", "amount": "¥488829.87"},
+		{"rank": 7, "code": 206317335, "budget": "ファースト住建", "amount": "¥488753.35"},
+		{"rank": 8, "code": 138263432, "budget": "カネ美食品", "amount": "¥488097.16"},
+		{"rank": 9, "code": 138263432, "budget": "日本レストランシステム", "amount": "¥488097.16"},
+		{"rank": 10, "code": 295942536, "budget": "ダイニチ工業", "amount": "¥488032.37"}
+    ],
+    "kogaisha1a":[
+		{"rank": 1, "code": 167252346, "budget": "オリエントコーポレーション", "amount": "¥490983.23"}
+    ],
+    "kogaisha1b":[
+		{"rank": 1, "code": 167252346, "budget": "オリエントコーポレーション", "amount": "¥490983.23"}
+    ],
+    "kogaisha2a":[
+		{"rank": 2, "code": 935157061, "budget": "ワークスアプリケーションズ", "amount": "¥490620.30"}
+    ],
+    "kogaisha2b":[
+		{"rank": 2, "code": 935157061, "budget": "ワークスアプリケーションズ", "amount": "¥490620.30"}
+    ],
+    "kogaisha3a":[
+		{"rank": 3, "code": 891663045, "budget": "愛光電気", "amount": "¥489900.96"}
+    ],
+    "kogaisha3b":[
+		{"rank": 3, "code": 891663045, "budget": "愛光電気", "amount": "¥489900.96"}
+    ],
+    "kogaisha4a":[
+		{"rank": 4, "code": 359591228, "budget": "東映ラボ・テック", "amount": "¥489830.37"}
+    ],
+    "kogaisha4b":[
+		{"rank": 4, "code": 359591228, "budget": "東映ラボ・テック", "amount": "¥489830.37"}
+    ],
+    "kogaisha5a":[
+		{"rank": 5, "code": 267245607, "budget": "日本パレットプール", "amount": "¥489459.96"}
+    ],
+    "kogaisha5b":[
+		{"rank": 5, "code": 267245607, "budget": "日本パレットプール", "amount": "¥489459.96"}
+    ],
+    "kogaisha6a":[
+		{"rank": 6, "code": 884153047, "budget": "北雄ラッキー", "amount": "¥488829.87"}
+    ],
+    "kogaisha6b":[
+		{"rank": 6, "code": 884153047, "budget": "北雄ラッキー", "amount": "¥488829.87"}
+    ],
+    "kogaisha7a":[
+		{"rank": 7, "code": 206317335, "budget": "ファースト住建", "amount": "¥488753.35"}
+    ],
+    "kogaisha7b":[
+		{"rank": 7, "code": 206317335, "budget": "ファースト住建", "amount": "¥488753.35"}
+    ],
+    "kogaisha8a":[
+		{"rank": 8, "code": 138263432, "budget": "カネ美食品", "amount": "¥488097.16"}
+    ],
+    "kogaisha8b":[
+		{"rank": 8, "code": 138263432, "budget": "カネ美食品", "amount": "¥488097.16"}
+    ],
+    "kogaisha9a":[
+		{"rank": 9, "code": 138263432, "budget": "日本レストランシステム", "amount": "¥488097.16"}
+    ],
+    "kogaisha9b":[
+		{"rank": 9, "code": 138263432, "budget": "日本レストランシステム", "amount": "¥488097.16"}
+    ],
+    "kogaisha10a":[
+		{"rank": 10, "code": 295942536, "budget": "ダイニチ工業", "amount": "¥488032.37"}
+    ],
+    "kogaisha10b":[
+		{"rank": 10, "code": 295942536, "budget": "ダイニチ工業", "amount": "¥488032.37"}
+    ]
+}

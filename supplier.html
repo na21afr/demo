@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>年度累計　上位10　仕入先</title>
+    <link rel="stylesheet" href="css/handsontable.full.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .handsontable .htDimmed {
+            background-color: #f0f0f0;
+        }
+
+        .handsontable thead th .relative {
+            background-color: #f6bc16;
+        }
+		.hot-lab {
+			margin: 0 auto;
+		}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+			<!--<a class="navbar-brand" >Top 10 仕入先 (YTD)</a>-->
+			</div>
+		</nav>
+    </div>
+    <div class="container">
+        <div class="mainmenu">
+            <div class="panel panel-info">
+
+
+                <div class="content-body">
+
+					<ul class="nav nav-tabs">
+					  <li><a href="index.html">プロジェクト</a></li>
+					  <li class="active"><a href="/">仕入先</a></li>
+					  <li><a href="employee.html">社員</a></li>
+					  <li><a href="budget.html">予算</a></li>
+					</ul>
+</br></br>
+					<div class="title-menu havetext">年度累計　上位10　仕入先</div>
+</br>
+                    <div>
+                        <div class="form-group">
+                            <select name="companyGroup" id="companyGroup" class="form-control pull-left">
+								<option value="1" selected="selected">グループ全体</option>
+								<option value="2">本社</option>
+								<option value="3">子会社 0１</option>
+								<option value="4">子会社 0２</option>
+                                <option value="5">子会社 03</option>
+								<option value="1">子会社 04</option>
+								<option value="2">子会社 05</option>
+								<option value="3">子会社 06</option>
+								<option value="4">子会社 07</option>
+								<option value="5">子会社 08</option>
+								<option value="1">子会社 09</option>
+								<option value="2">子会社 10</option>
+								<option value="3">子会社 11</option>
+								<option value="4">子会社 12</option>
+								<option value="5">子会社 13</option>
+								<option value="1">子会社 14</option>
+								<option value="2">子会社 15</option>
+								<option value="3">子会社 16</option>
+								<option value="4">子会社 17</option>
+								<option value="5">子会社 18</option>
+								<option value="1">子会社 19</option>
+                            </select>
+</br></br></br>
+							<div class="row">
+								<div class="col-xs-6">
+									<!-- Handsontable Instance 1-->
+									<label>前会計年度</label>
+									<div id="hot1"></div>
+								</div>
+								<div class="col-xs-6">
+									<!-- Handsontable Instance 2-->
+									<label>現会計年度</label>
+									<div id="hot2"></div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="title-menu notext"></div>
+                    </div>
+
+                    <div class="col-sm-7 footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /container -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.serializejson.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/handsontable.full.js"></script>
+	<script type="text/javascript" src="json/supplier.json"></script>
+
+	<!-- This page's JS code starts here -->
+    <script type="text/javascript">
+
+		//DataSource JSON file in local
+		var supplierData;
+
+		$.getJSON('json/supplier.json', function(data) {
+			supplierData = data;
+		});
+
+		var container1 = document.getElementById('hot1');
+		var container2 = document.getElementById('hot2');
+		var hot1;
+		var hot2;
+
+		function hot1func(data){
+		//Initialize Handsontable
+					hot1 = new Handsontable(container1, {
+					data: data,
+					//stretchH: 'all',
+					colWidths: [47, 150, 180, 150],
+					autoWrapRow: true,
+					autoRowSize: true,
+					//startRows: 6,
+					maxCols: 6,
+					minRows: 10,
+					height: 500,
+					colHeaders: [
+						'順位',
+						'コード',
+						'仕入先',
+						'金額'
+					],
+					columns: [{
+						data: 'rank',
+						type: 'numeric',
+						readOnly: true
+					}, {
+						data: 'code'
+					}, {
+						data: 'supplier',
+					}, {
+						data: 'amount'
+					}],
+				});
+		};
+
+		function hot2func(data){
+		//Initialize Handsontable
+					hot2 = new Handsontable(container2, {
+					data: data,
+					//stretchH: 'all',
+					colWidths: [47, 150, 180, 150],
+					autoWrapRow: true,
+					//autoRowSize: true,
+					//startRows: 6,
+					maxCols: 6,
+					minRows: 10,
+					height: 500,
+					colHeaders: [
+						'順位',
+						'コード',
+						'仕入先',
+						'金額'
+					],
+					columns: [{
+						data: 'rank',
+						type: 'numeric',
+						readOnly: true
+					}, {
+						data: 'code'
+					}, {
+						data: 'supplier',
+					}, {
+						data: 'amount'
+					}],
+				});
+		};
+
+		$("#companyGroup").change(function() {
+			var val = $(this).val();
+
+			if (val == 1){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(supplierData.supplier6);
+			hot2func(supplierData.supplier1);
+
+			} else if (val == 2){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(supplierData.supplier8);
+			hot2func(supplierData.supplier3);
+
+			} else if (val == 3){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(supplierData.supplier9);
+			hot2func(supplierData.supplier4);
+
+			} else if (val == 4){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(supplierData.supplier9);
+			hot2func(supplierData.supplier5);
+
+			} else if (val == 5){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(supplierData.supplier10);
+			hot2func(supplierData.supplier6);
+
+			}
+		});
+
+        $(document).ready(function() {
+		hot1func(supplierData.supplier6);
+		hot2func(supplierData.supplier1);
+
+        });
+    </script>
+</body>
+
+</html>

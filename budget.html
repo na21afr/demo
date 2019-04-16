@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>予算残高</title>
+    <link rel="stylesheet" href="css/handsontable.full.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .handsontable .htDimmed {
+            background-color: #f0f0f0;
+        }
+        
+        .handsontable thead th .relative {
+            background-color: #f6bc16;
+        }
+		.hot-lab {
+			margin: 0 auto;
+		}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+			<!--<a class="navbar-brand" >Top 10 仕入先 (YTD)</a>-->
+			</div>
+		</nav>
+    </div>
+    <div class="container">
+        <div class="mainmenu">
+            <div class="panel panel-info">
+
+
+                <div class="content-body">
+
+					<ul class="nav nav-tabs">
+					  <li><a href="index.html">プロジェクト</a></li>
+					  <li><a href="supplier.html">仕入先</a></li>
+					  <li><a href="employee.html">社員</a></li>
+					  <li class="active"><a href="#">予算</a></li>
+					</ul>
+</br></br>
+					<div class="title-menu havetext">予算残高</div>
+</br>
+                    <div>
+                        <div class="form-group">
+                            <select name="companyGroup" id="companyGroup" class="form-control pull-left">
+								<option value="98" selected="selected" >グループ全体</option>
+								<option value="99">本社</option>
+								<option value="1">子会社 0１</option>
+								<option value="2">子会社 0２</option>
+                                <option value="3">子会社 03</option>
+								<option value="4">子会社 04</option>
+								<option value="5">子会社 05</option>
+								<option value="6">子会社 06</option>
+								<option value="7">子会社 07</option>
+								<option value="8">子会社 08</option>
+								<option value="9">子会社 09</option>
+								<option value="10">子会社 10</option>
+                            </select>
+</br></br></br>
+							<div class="row">
+								<div class="col-xs-6">
+									<!-- Handsontable Instance 1-->
+									<label>予算残高: 現在 </label>
+									<div id="hot1"></div>
+								</div>
+								<div class="col-xs-6">
+									<!-- Handsontable Instance 2-->
+									<label>予算残高: 次期支払後</label>
+									<div id="hot2"></div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="title-menu notext"></div>
+                    </div>
+					
+                    <div class="col-sm-7 footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /container -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.serializejson.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/handsontable.full.js"></script>
+	<script type="text/javascript" src="json/budget.json"></script>
+
+	<!-- This page's JS code starts here -->
+    <script type="text/javascript">
+
+		//DataSource JSON file in local
+		var budgetData;
+
+		$.getJSON('json/budget.json', function(data) {
+			budgetData = data;
+		});
+
+		var container1 = document.getElementById('hot1');
+		var container2 = document.getElementById('hot2');
+		var hot1;
+		var hot2;
+
+		function hot1func(data){
+			//Initialize Handsontable
+			hot1 = new Handsontable(container1, {
+				data: data,
+				//stretchH: 'all',
+				colWidths: [47, 150, 180, 150],
+				autoWrapRow: true,
+				autoRowSize: true,
+				//startRows: 6,
+				maxCols: 6,
+				minRows: 1,
+				height: 500,
+				colHeaders: [
+					'No.',
+					'コード',
+					'会社名',
+					'金額'
+				],
+				columns: [{
+					data: 'rank',
+					type: 'numeric',
+					readOnly: true
+				}, {
+					data: 'code'
+				}, {
+					data: 'budget',
+				}, {
+					data: 'amount'
+				}],
+			});
+		};
+
+		function hot2func(data){
+			//Initialize Handsontable
+			hot2 = new Handsontable(container2, {
+				data: data,
+				//stretchH: 'all',
+				colWidths: [47, 150, 180, 150],
+				autoWrapRow: true,
+				//autoRowSize: true,
+				//startRows: 6,
+				maxCols: 6,
+				minRows: 1,
+				height: 500,
+				colHeaders: [
+					'No.',
+					'コード',
+					'会社名',
+					'金額'
+				],
+				columns: [{
+					data: 'rank',
+					type: 'numeric',
+					readOnly: true
+				}, {
+					data: 'code'
+				}, {
+					data: 'budget',
+				}, {
+					data: 'amount'
+				}],
+			});
+		};
+
+		$("#companyGroup").change(function() {
+			var val = $(this).val();
+
+			if (val == 98){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.group1);
+			hot2func(budgetData.group2);
+
+			} else if (val == 99){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.honsha1a);
+			hot2func(budgetData.honsha1b);
+
+			} else if (val == 1){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha1a);
+			hot2func(budgetData.kogaisha1b);
+
+			} else if (val == 2){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha2a);
+			hot2func(budgetData.kogaisha2b);
+
+			} else if (val == 3){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha3a);
+			hot2func(budgetData.kogaisha3b);
+
+			} else if (val == 4){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha4a);
+			hot2func(budgetData.kogaisha4b);
+
+			} else if (val == 5){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha5a);
+			hot2func(budgetData.kogaisha5b);
+
+			} else if (val == 6){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha6a);
+			hot2func(budgetData.kogaisha6b);
+
+			} else if (val == 7){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha7a);
+			hot2func(budgetData.kogaisha7b);
+
+			} else if (val == 8){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha8a);
+			hot2func(budgetData.kogaisha8b);
+
+			} else if (val == 9){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha9a);
+			hot2func(budgetData.kogaisha9b);
+
+			} else if (val == 10){
+			hot1.destroy();
+			hot2.destroy();
+			hot1func(budgetData.kogaisha10a);
+			hot2func(budgetData.kogaisha10b);
+
+			}
+		}); 
+
+        $(document).ready(function() {
+			hot1func(budgetData.group1);
+			hot2func(budgetData.group2);
+        });
+    </script>
+</body>
+
+</html>

@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>予算残高</title>
-    <link rel="stylesheet" href="blob/master/css/handsontable.full.css">
-    <link rel="stylesheet" href="blob/master/css/bootstrap.min.css">
-    <link rel="stylesheet" href="blob/master/css/style.css">
+    <link rel="stylesheet" href="css/handsontable.full.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .handsontable .htDimmed {
             background-color: #f0f0f0;
@@ -92,12 +92,12 @@
     </div>
 
     <!-- /container -->
-    <script src="blob/master/js/jquery.min.js"></script>
-    <script src="blob/master/js/jquery-3.3.1.js"></script>
-    <script src="blob/master/js/jquery.serializejson.js"></script>
-    <script src="blob/master/js/bootstrap.js"></script>
-    <script src="blob/master/js/handsontable.full.js"></script>
-	<script type="text/javascript" src="blob/master/json/budget.json"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.serializejson.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/handsontable.full.js"></script>
+	<script type="text/javascript" src="json/budget.json"></script>
 
 	<!-- This page's JS code starts here -->
     <script type="text/javascript">
@@ -105,7 +105,7 @@
 		//DataSource JSON file in local
 		var budgetData;
 
-		$.getJSON('blob/master/json/budget.json', function(data) {
+		$.getJSON('json/budget.json', function(data) {
 			budgetData = data;
 		});
 
